@@ -24,7 +24,7 @@ const login = (req, res) => {
 });
 }
 
-// User authentication
+// User authentication, Postman header key: "Authorization"
 const authenticate = (req, res, next) => {
   const token = req.header('Authorization');
   if(!token) {
